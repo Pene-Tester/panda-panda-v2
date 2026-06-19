@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Make a Wish ♡</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+</head>
+<body>
+  <span class="doodle doodle-star">✦</span>
+  <span class="doodle doodle-heart">♡</span>
+
+  <main class="page page--cake">
+    <section class="cake-scene">
+      <h1 class="cake-title">Make a wish,<br>yabbyy</h1>
+
+      <div class="cake-wrap" id="cake-wrap">
+        <svg class="cake-svg" viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Plate -->
+          <ellipse cx="140" cy="200" rx="118" ry="14" fill="#e8dcc8" stroke="#3d3428" stroke-width="2"/>
+          <!-- Bottom tier -->
+          <path d="M55 155 Q55 175 140 178 Q225 175 225 155 L225 120 Q225 108 140 108 Q55 108 55 120 Z"
+                fill="#f0b4bc" stroke="#3d3428" stroke-width="2.5" stroke-linejoin="round"/>
+          <!-- Middle tier -->
+          <path d="M75 118 Q75 132 140 134 Q205 132 205 118 L205 88 Q205 78 140 78 Q75 78 75 88 Z"
+                fill="#e8a0a8" stroke="#3d3428" stroke-width="2.5" stroke-linejoin="round"/>
+          <!-- Top tier -->
+          <path d="M95 88 Q95 98 140 100 Q185 98 185 88 L185 62 Q185 54 140 54 Q95 54 95 62 Z"
+                fill="#f5c6cb" stroke="#3d3428" stroke-width="2.5" stroke-linejoin="round"/>
+          <!-- Drips -->
+          <path d="M70 130 Q72 138 68 142" fill="none" stroke="#c97b84" stroke-width="2" stroke-linecap="round"/>
+          <path d="M200 95 Q202 103 198 107" fill="none" stroke="#c97b84" stroke-width="2" stroke-linecap="round"/>
+          <!-- Candles -->
+          <g class="cake-candles" id="cake-candles">
+            <line x1="115" y1="54" x2="115" y2="28" stroke="#f5e6c8" stroke-width="4" stroke-linecap="round"/>
+            <ellipse class="candle-flame candle-flame--1" cx="115" cy="22" rx="5" ry="8" fill="#ffb347"/>
+            <line x1="140" y1="54" x2="140" y2="24" stroke="#f5e6c8" stroke-width="4" stroke-linecap="round"/>
+            <ellipse class="candle-flame candle-flame--2" cx="140" cy="18" rx="6" ry="9" fill="#ffb347"/>
+            <line x1="165" y1="54" x2="165" y2="28" stroke="#f5e6c8" stroke-width="4" stroke-linecap="round"/>
+            <ellipse class="candle-flame candle-flame--3" cx="165" cy="22" rx="5" ry="8" fill="#ffb347"/>
+          </g>
+          <!-- Sprinkles -->
+          <circle cx="90" cy="145" r="2.5" fill="#7aab6f"/>
+          <circle cx="120" cy="160" r="2" fill="#d4a574"/>
+          <circle cx="160" cy="148" r="2.5" fill="#c97b84"/>
+          <circle cx="190" cy="158" r="2" fill="#7aab6f"/>
+          <circle cx="110" cy="95" r="2" fill="#d4a574"/>
+          <circle cx="170" cy="92" r="2.5" fill="#c97b84"/>
+        </svg>
+      </div>
+
+      <form class="wish-form" id="wish-form">
+        <label class="wish-label" for="wish">Close your eyes and type your wish...</label>
+        <textarea
+          class="wish-input"
+          id="wish"
+          name="wish"
+          rows="4"
+          placeholder="I wish..."
+          required
+          maxlength="500"
+        ></textarea>
+        <button type="submit" class="btn-next btn-wish" id="wish-submit">
+          send my wish ♡
+        </button>
+        <p class="wish-note">Only I can see this — it's our little secret</p>
+      </form>
+
+      <div class="wish-success hidden" id="wish-success">
+        <p class="wish-success-title">wish sent ✨</p>
+        <p class="wish-success-text">
+          Your wish is on its way.<br>
+          I hope every single one comes true, yabbyy.<br>
+          Happy Birthday ♡
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

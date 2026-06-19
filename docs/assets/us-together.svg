@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f0e6d6"/>
+  <rect x="30" y="30" width="340" height="340" fill="#fdf6e8" stroke="#3d3428" stroke-width="3"
+        stroke-dasharray="8 4" rx="8"/>
+  <text x="200" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#6b5d4d">
+    your photo here
+  </text>
+  <text x="200" y="220" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#6b5d4d">
+    replace with us-together.jpg
+  </text>
+  <!-- sketch heart -->
+  <path d="M200 280 C200 280 170 255 170 230 C170 218 178 210 188 210 C195 210 200 216 200 222 C200 216 205 210 212 210 C222 210 230 218 230 230 C230 255 200 280 200 280Z"
+        fill="none" stroke="#e8a0a8" stroke-width="2"/>
+</svg>

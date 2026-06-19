@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>For Yabbyy ♡</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+</head>
+<body>
+  <span class="doodle doodle-star">✦</span>
+  <span class="doodle doodle-heart">♡</span>
+
+  <main class="page">
+    <div class="envelope-scene" id="envelope-scene">
+      <div class="envelope-wrap">
+        <svg class="envelope-svg" viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg">
+          <!-- Envelope body -->
+          <path class="envelope-body" d="M20 130 L160 190 L300 130 L300 250 Q300 260 290 260 L30 260 Q20 260 20 250 Z"
+                fill="#f5e6c8" stroke="#3d3428" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Side folds -->
+          <path d="M20 130 L160 190 L20 250" fill="none" stroke="#3d3428" stroke-width="1.5" opacity="0.35"/>
+          <path d="M300 130 L160 190 L300 250" fill="none" stroke="#3d3428" stroke-width="1.5" opacity="0.35"/>
+
+          <!-- Closed flap -->
+          <g class="envelope-flap">
+            <path d="M20 130 L160 68 L300 130 L160 190 Z"
+                  fill="#e8d5b0" stroke="#3d3428" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="160" cy="122" r="14" fill="#c97b84" stroke="#3d3428" stroke-width="1.5"/>
+            <text x="160" y="127" text-anchor="middle" font-size="12" fill="#fffef5">♡</text>
+          </g>
+
+          <!-- Letter — rendered last so it sits on top when revealed -->
+          <g class="envelope-letter">
+            <rect x="66" y="148" width="188" height="96" rx="3"
+                  fill="#fffef5" stroke="#3d3428" stroke-width="2"/>
+            <text x="160" y="178" text-anchor="middle" font-family="Caveat, cursive" font-size="18" fill="#3d3428">
+              To my yabbyy
+            </text>
+            <text x="160" y="210" text-anchor="middle" font-family="Caveat, cursive" font-size="24" font-weight="700" fill="#c97b84">
+              Happy Birthday
+            </text>
+            <text x="160" y="232" text-anchor="middle" font-size="14" fill="#e8a0a8">♡</text>
+          </g>
+        </svg>
+      </div>
+
+      <p class="envelope-hint" id="envelope-hint">tap to open ♡</p>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
